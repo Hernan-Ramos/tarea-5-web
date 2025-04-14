@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+    background-color: #e0ffe0;
+  }
+  
+  .padre {
+    margin: 0;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+      "menu"
+      "tarjetas";
+  }
+  
+  .menu {
+    padding: 20px;
+    background-color: lightblue;
+    grid-area: menu;
+  }
+  
+  /* CARRUSEL PEQUEÑO Y CENTRADO */
+  .carousel-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* CONTENIDO TARJETAS */
+  .tarjetas {
+    justify-items: center;
+    background-color: white;
+    padding: 20px;
+    width: 100vw;
+    grid-area: tarjetas;
+    gap: 20px;
+  }
+  
+  /* NAV LINKS */
+  .nav-link {
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .nav-link:hover {
+    background-color: white;
+    transform: scale(1.1);
+  }
+  
+  /* TEXTO DESTACADO */
+  .redaccion {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    width: 100vw;
+    max-width: 900px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .redaccion:hover {
+    background-color: lightcoral;
+    transform: scale(1.05);
+  }
+  
+  /* HISTORIA / CONTENEDOR ACORDEÓN */
+  .historia-container {
+    background-color: #ffffffd9;
+    border-left: 8px solid green;
+  }
+  
+  /* ACORDEÓN */
+  .accordion-button {
+    background-color: aquamarine;
+    font-weight: bold;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  /* FOOTER */
+  footer {
+    margin: 0;
+    padding: 30px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* IMÁGENES */
+  img {
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+  

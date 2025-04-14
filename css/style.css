@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+  
+
+.padre {
+    font-size: 22px;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "menu menu menu"
+        "historia carrusel carrusel"
+        "historia carrusel carrusel"
+        "historia historia2 historia3"
+        "historia historia2 historia3";
+    justify-content: center;
+    align-items: start;
+    grid-gap: 20px;
+    background-color: white;
+}
+
+.menu {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background-color: lightblue;
+    grid-area: menu;
+}
+
+.carrusel {
+    width: 800px;
+    height: 500px;
+    grid-area: carrusel;
+    margin: 0 auto 20px 20px;
+    padding: 0 auto 20px 20px;
+}
+
+.historia {
+    grid-area: historia;
+    margin: 20px;
+    background-color: powderblue;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.historia2 {
+    font-size: 18px;
+    grid-area: historia2;
+    margin: 30px;
+    background-color: powderblue;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.historia3 {
+    grid-area: historia3;
+    margin: 30px;
+    background-color: powderblue;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+footer {
+    padding: 20px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    width: 100%;
+    width: 100vw;
+}
+.nav-link {
+    color: black;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+
+.historia:hover,
+.historia2:hover,
+.historia3:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: lightcoral;
+    transform: scale(1.05);
+}

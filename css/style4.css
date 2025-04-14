@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.padre {
+  margin: 0;
+  background-color: white;
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "tarjetas";
+}
+.nav-link {
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-link:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+  .navbar .nav-link.active {
+    color: #198754;
+  }
+  
+  .card-title {
+    font-size: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  footer {
+    margin: 0;
+    padding: 30px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }  
+.menu {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 20px;
+    background-color: lightblue;
+    grid-area: menu;
+
+}
